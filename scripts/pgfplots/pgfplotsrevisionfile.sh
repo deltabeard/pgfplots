@@ -4,8 +4,8 @@
 #
 # The resulting macros define the current version of pgfplots.
 
-LATEST_TAG=`git describe --abbrev=0 --tags`
-REVISION=`git describe --tags HEAD`
+LATEST_TAG=`git describe --abbrev=0 --tags --always`
+REVISION=`git describe --tags HEAD --always`
 
 
 rm -f tex/generic/pgfplots/pgfplots.revision.tex
