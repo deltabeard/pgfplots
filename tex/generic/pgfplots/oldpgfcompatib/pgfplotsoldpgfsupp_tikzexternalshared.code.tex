@@ -882,7 +882,7 @@
 		\csname newwrite\endcsname\tikzexternal@outmakefile
 	\endgroup
 	\immediate\openout\tikzexternal@outmakefile=\tikzexternal@realjob.makefile\relax
-	\immediate\write\tikzexternal@outmakefile{ALL_FIGURE_NAMES=\tikzexternal@DOLLARchar(shell cat \tikzexternal@realjob.figlist)}%
+	\immediate\write\tikzexternal@outmakefile{ALL_FIGURE_NAMES=\tikzexternal@DOLLARchar(file < \tikzexternal@realjob.figlist)}%
 	\immediate\write\tikzexternal@outmakefile{ALL_FIGURES=\tikzexternal@DOLLARchar(ALL_FIGURE_NAMES:\tikzexternal@PERCENTchar=\tikzexternal@PERCENTchar\tikzexternalimgextension)}%
 	\immediate\write\tikzexternal@outmakefile{}%
 	\immediate\write\tikzexternal@outmakefile{allimages: \tikzexternal@DOLLARchar(ALL_FIGURES)}%
